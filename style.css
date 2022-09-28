@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: radial-gradient( rgb(255, 255, 255), rgb(233, 7, 233));
+    color: blue;
+    font-family: cursive;
+}
+.container{
+    display: flex;
+    text-align: center;
+}
+.mouseEvent{
+    border: solid 1px rgb(105, 3, 105);
+    margin: 40px;
+    min-width: 180px;
+    min-height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.mouseEvent h4{
+    position: absolute;
+    top: -50px;
+    font-size: 14px;
+    left: 50%;
+    translate: -50%;
+    white-space: nowrap;
+    font-weight: 100;
+    color: rgb(56, 4, 47);
+}
+
+@media (max-width: 500px) {
+    .container{
+        flex-direction: column;
+    }
+}
